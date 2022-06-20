@@ -4,16 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2245" />
-        <entry key="app/src/main/res/layout/activity_cart.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_fruit_selected.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.17" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.2245" />
+        <entry key="app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.2245" />
+        <entry key="app/src/main/res/layout/activity_cart.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_fruit_selected.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.13" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.13" />
-        <entry key="app/src/main/res/layout/activity_selector.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_shop.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_selector.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/activity_shop.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_signinpage.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_signuppage.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/cartitem.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/fruitshopitem.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/cartitem.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fruitshopitem.xml" value="0.33" />
         <entry key="app/src/main/res/layout/recycler_view_item.xml" value="0.2074074074074074" />
         <entry key="app/src/main/res/layout/recycler_view_item_1.xml" value="0.2074074074074074" />
       </map>

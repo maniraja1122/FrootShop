@@ -21,7 +21,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/fruitimg"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -32,24 +32,30 @@
                 app:srcCompat="@drawable/fruitbg" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/fruitname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:background="@color/black"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:text="Red Cherries"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView6"
+                app:layout_constraintBottom_toTopOf="@+id/fruitprice"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.192"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/fruitprice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:background="@color/Orange"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
                 android:text="$11.34"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"

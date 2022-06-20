@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootid"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fruitbg"
@@ -11,6 +12,7 @@
         android:id="@+id/cardView4"
         android:layout_width="0dp"
         android:layout_height="400dp"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,14 +23,14 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/fruitname1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Red Cherries"
                 android:textColor="#000000"
                 android:textSize="34sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/textView9"
+                app:layout_constraintBottom_toTopOf="@+id/fruitrate"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.158"
                 app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +38,7 @@
                 app:layout_constraintVertical_bias="0.333" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/fruitrate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
@@ -49,11 +51,11 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/addcartbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/lightyellow"
-                android:text="ADD TO CART $44.8"
+                android:text="ADD TO CART"
                 android:textColor="#000000"
                 android:textStyle="bold"
                 app:cornerRadius="30dp"
@@ -63,7 +65,7 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/decrement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
@@ -72,14 +74,14 @@
                 android:textSize="48sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/guideline9"
-                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                app:layout_constraintEnd_toStartOf="@+id/quantity"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/quantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -87,13 +89,13 @@
                 android:textSize="48sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/guideline9"
-                app:layout_constraintEnd_toStartOf="@+id/textView12"
+                app:layout_constraintEnd_toStartOf="@+id/increment"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/decrement"
                 app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/increment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -104,7 +106,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline9"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toEndOf="@+id/quantity"
                 app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
             <androidx.constraintlayout.widget.Guideline
@@ -125,7 +127,7 @@
     </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/backbtnfruit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/cardView4"

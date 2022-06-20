@@ -44,6 +44,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:hint="Enter Email"
+                android:textColorHint="#676767"
                 app:boxCornerRadiusBottomEnd="30dp"
                 app:boxCornerRadiusBottomStart="30dp"
                 app:boxCornerRadiusTopEnd="30dp"
@@ -59,8 +60,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/namefield">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailtxt"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,6 +75,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:hint="Enter Name"
+                android:textColorHint="#676767"
                 app:boxCornerRadiusBottomEnd="30dp"
                 app:boxCornerRadiusBottomStart="30dp"
                 app:boxCornerRadiusTopEnd="30dp"
@@ -87,8 +91,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView2">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nametxt"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -100,6 +106,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:hint="Enter Password"
+                android:textColorHint="#676767"
                 app:boxCornerRadiusBottomEnd="30dp"
                 app:boxCornerRadiusBottomStart="30dp"
                 app:boxCornerRadiusTopEnd="30dp"
@@ -107,22 +114,26 @@
                 app:boxStrokeColor="@color/lightyellow"
                 app:boxStrokeWidth="3dp"
                 app:boxStrokeWidthFocused="3dp"
+                app:endIconTint="#4A4A4A"
                 app:hintTextColor="#757575"
-                app:layout_constraintBottom_toTopOf="@+id/containedButton"
+                app:layout_constraintBottom_toTopOf="@+id/createbtn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/emailfield"
-                app:passwordToggleEnabled="true">
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000000">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passtxt"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/containedButton"
+                android:id="@+id/createbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/lightyellow"
@@ -150,7 +161,7 @@
         app:layout_constraintGuide_percent="0.3" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/backbtnsel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"

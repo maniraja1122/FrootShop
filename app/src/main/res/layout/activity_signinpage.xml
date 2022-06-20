@@ -64,6 +64,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:hint="Enter Email"
+                android:textColorHint="#707070"
                 app:boxCornerRadiusBottomEnd="30dp"
                 app:boxCornerRadiusBottomStart="30dp"
                 app:boxCornerRadiusTopEnd="30dp"
@@ -79,8 +80,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/welcomeback">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailtxt1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textColorHint="#505050" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,6 +96,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:hint="Enter Password"
+                android:textColorHint="#8A8A8A"
                 app:boxCornerRadiusBottomEnd="30dp"
                 app:boxCornerRadiusBottomStart="30dp"
                 app:boxCornerRadiusTopEnd="30dp"
@@ -99,17 +104,22 @@
                 app:boxStrokeColor="@color/lightyellow"
                 app:boxStrokeWidth="3dp"
                 app:boxStrokeWidthFocused="3dp"
+                app:endIconTint="#4A4A4A"
                 app:hintTextColor="#757575"
                 app:layout_constraintBottom_toTopOf="@+id/signinbtn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/emailfieldsignin"
-                app:passwordToggleEnabled="true">
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000000">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passtxt1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textColorHint="#555555" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -124,7 +134,7 @@
         app:layout_constraintGuide_percent="0.3" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/backbtnsel1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
