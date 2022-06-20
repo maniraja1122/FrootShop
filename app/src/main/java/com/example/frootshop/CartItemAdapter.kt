@@ -29,7 +29,13 @@ class CartItemAdapter(var fruitlist:MutableList<Fruits>):RecyclerView.Adapter<Ca
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.cartitem,parent,false))
+        var holder = MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.cartitem,parent,false))
+        holder.delbtn.setOnClickListener(){
+            fruitlist.removeAt(holder.adapterPosition)
+            AuthHelper.UpdateUser()
+        }
+
+        return holder
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
